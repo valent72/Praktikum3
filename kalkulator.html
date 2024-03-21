@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator_225314160</title>
+</head>
+<body>
+
+    <h1>Kalkulator Tambah / Kurang</h1>
+    <label for="angka1">Masukkan Angka Pertama</label>
+    <input type="text" id="angka1">
+    
+    <label for="angka2">Masukkan Angka Kedua</label>
+    <input type="text" id="angka2">
+    
+    <button onclick="add()">Jumlah ( + )</button>
+    <button onclick="subtract()">Kurang ( - )</button>
+    
+    <label for="hasil">Hasil</label>
+    <input type="text" id="hasil" readonly>
+    
+    <script>
+    function add() {
+      var angka1 = parseFloat(document.getElementById("angka1").value);
+      var angka2 = parseFloat(document.getElementById("angka2").value);
+      var hasil = angka1 + angka2;
+      document.getElementById("hasil").value = hasil;
+    }
+    
+    function subtract() {
+      var angka1 = parseFloat(document.getElementById("angka1").value);
+      var angka2 = parseFloat(document.getElementById("angka2").value);
+      var hasil = angka1 - angka2;
+      document.getElementById("hasil").value = hasil;
+    }
+    </script>
+    
+    </body>
+</html>
